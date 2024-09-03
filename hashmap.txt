@@ -21,6 +21,6 @@ t = 7
 u = (yet to decide)
 v = ^
 w = ^^
-x = }{
+x = ><
 y = ¥
 z = yet to decide
