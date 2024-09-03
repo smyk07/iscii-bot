@@ -33,12 +33,15 @@ async def on_message(message):
             await message.add_reaction("😹")
 
     if (
-        message.content.startswith("isciidecode ")
-        or message.content.startswith("Isciidecode ")
+        message.content.startswith("isciidecode")
+        or message.content.startswith("Isciidecode")
     ): 
         if len(message.content) > 12: 
             args = message.content[12:]
             await message.reply(iscii.decode(args))
+        elif message.reference: 
+            replied_message = await message.channel.fetch_message(message.reference.message_id)
+            await message.reply(iscii.decode(replied_message.content))
         else:
             await message.add_reaction("😹")
 
