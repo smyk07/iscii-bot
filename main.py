@@ -23,8 +23,8 @@ async def on_message(message):
         return
 
     if (
-        message.content.startswith("iscii")
-        or message.content.startswith("Iscii")
+        message.content.startswith("iscii ")
+        or message.content.startswith("Iscii ")
     ):
         if len(message.content) > 6:
             args = message.content[6:]
@@ -33,8 +33,8 @@ async def on_message(message):
             await message.add_reaction("😹")
 
     if (
-        message.content.startswith("isciidecode")
-        or message.content.startswith("Isciidecode")
+        message.content.startswith("isciidecode ")
+        or message.content.startswith("Isciidecode ")
     ): 
         if len(message.content) > 12: 
             args = message.content[12:]
