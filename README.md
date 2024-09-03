@@ -8,8 +8,16 @@ This is just a simple discord bot for encoding strings into ISCII, just uses a h
 
 ## Usage
 
+Encode:
+
 ```
 iscii <text>
+```
+
+Decode:
+
+```
+isciidecode <text>
 ```
 
 ## Example
