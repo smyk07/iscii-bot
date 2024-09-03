@@ -28,7 +28,7 @@ async def on_message(message):
     ):
         if len(message.content) > 6:
             args = message.content[6:]
-            await message.reply(f"{iscii.encode(args)}\n-# [Know more](<https://github.com/smyk07/iscii-bot>)")
+            await message.reply(iscii.encode(args))
         else:
             await message.add_reaction("😹")
 
@@ -38,7 +38,7 @@ async def on_message(message):
     ): 
         if len(message.content) > 12: 
             args = message.content[12:]
-            await message.reply(f"{iscii.decode(args)}\n-# [Know more](<https://github.com/smyk07/iscii-bot>)")
+            await message.reply(iscii.decode(args))
         else:
             await message.add_reaction("😹")
 

@@ -25,6 +25,17 @@ iso_hashmap = {
     "x": "><",
     "y": "¥",
     "z": "2",
+    # NUMBERS
+    "1": "l",
+    "2": "z",
+    "3": "e",
+    "4": "a",
+    "5": "s",
+    "6": "g",
+    "7": "t",
+    "8": "b",
+    "9": "p",
+    "0": "o",
 }
 
 inv_iso_hashmap = {v: k for k, v in iso_hashmap.items()}
