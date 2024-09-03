@@ -1,4 +1,4 @@
-from hash_logic import iscii_hash
+import iscii
 import discord
 import os
 
@@ -25,13 +25,23 @@ async def on_message(message):
     if (
         message.content.startswith("iscii")
         or message.content.startswith("Iscii")
-        or message.content.startswith("ISCII")
     ):
         if len(message.content) > 6:
             args = message.content[6:]
-            await message.reply(iscii_hash(args))
+            await message.reply(f"{iscii.encode(args)}\n-# [Know more](<https://github.com/smyk07/iscii-bot>)")
         else:
             await message.add_reaction("😹")
+
+    if (
+        message.content.startswith("isciidecode")
+        or message.content.startswith("Isciidecode")
+    ): 
+        if len(message.content) > 12: 
+            args = message.content[12:]
+            await message.reply(f"{iscii.decode(args)}\n-# [Know more](<https://github.com/smyk07/iscii-bot>)")
+        else:
+            await message.add_reaction("😹")
+
 
     if message.content == "!cabbit":
         await message.channel.send(
