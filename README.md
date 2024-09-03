@@ -1,5 +1,7 @@
 # ISCII: The ISO Standard Code for Information Interchange
 
+![Cabbit](./cabbit.jpg)
+
 This is just a simple discord bot for encoding strings into ISCII, just uses a hashmap to replace characters the provided string.
 
 ## Usage
