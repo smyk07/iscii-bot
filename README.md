@@ -11,14 +11,18 @@ This is just a simple discord bot for encoding strings into ISCII, just uses a h
 Encode:
 
 ```
-iscii <text>
+isciie <text>
 ```
+
+- If text is not provided, and if the command is a reply to a message, then the message which is replied will be encoded.
 
 Decode:
 
 ```
-isciidecode <text>
+isciid <text>
 ```
+
+- If text is not provided, and if the command is a reply to a message, then the message which is replied will be decoded.
 
 ## Example
 
