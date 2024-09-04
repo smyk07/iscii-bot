@@ -52,7 +52,7 @@ async def on_message(message):
         )
 
     if message.content == "!cabbitpet":
-        await message.discord.channel.send(
+        await message.channel.send(
             "https://cdn.discordapp.com/attachments/757205803651301436/1278664278831923300/rat.gif"
         )
 
