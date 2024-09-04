@@ -30,7 +30,7 @@ async def on_message(message):
             replied_message = await message.channel.fetch_message(
                 message.reference.message_id
             )
-            await replied_message.reply(iscii.encode(replied_message.content))
+            await message.reply(iscii.encode(replied_message.content))
         else:
             await message.add_reaction("😹")
 
