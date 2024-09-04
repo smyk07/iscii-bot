@@ -51,5 +51,10 @@ async def on_message(message):
             "https://media.discordapp.net/attachments/1224994248550780961/1280549417295941795/1000005626.jpg"
         )
 
+    if message.content == "!cabbitpet":
+        await message.discord.channel.send(
+            "https://cdn.discordapp.com/attachments/757205803651301436/1278664278831923300/rat.gif"
+        )
+
 
 client.run(os.getenv("ISCII_TOKEN"))
