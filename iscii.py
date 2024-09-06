@@ -37,6 +37,12 @@ iso_hashmap = {
     "8": "b",
     "9": "p",
     "0": "o",
+    # SPECIAL CHARACTERS
+    "(": "c",
+    "#": "h",
+    "!": "i",
+    "π": "n",
+    "₹": "r",
 }
 
 inv_iso_hashmap = {v: k for k, v in iso_hashmap.items()}
@@ -68,7 +74,7 @@ def decode(string: str) -> str:
 
 
 if __name__ == "__main__":
-    original_string = "Hello chia, hitz, daddy, and the Whole Wide World."
+    original_string = "(hello)"
     encoded_string = encode(original_string)
     decoded_string = decode(encoded_string)
 
